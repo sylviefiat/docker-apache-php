@@ -9,6 +9,8 @@ RUN apt-get update && \
  apt-get -y install mysql-client && \
  apt-get -y install postgresql-client 
 
+RUN apt-get -y install ssmtp
+
 # Fix permissions for apache
 RUN chown -R www-data:www-data /app
 
